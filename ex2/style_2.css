@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image:
+		url("https://cdn.pixabay.com/photo/2022/11/14/10/54/sunrise-7591335_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+}
+
+p {
+	color: red;
+}
+
+.div1 {
+	color: blue;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+}
+
+.div2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div3 {
+	display: flex;
+	flex-direction: column;
+}

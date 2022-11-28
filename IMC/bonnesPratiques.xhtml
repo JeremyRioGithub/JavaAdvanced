@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<link rel="stylesheet" type="text/css" href="../style_4.css" />
+	<title>Index</title>
+</h:head>
+<body>
+	<h1>IMC entre 18.5 et 25, continuez de bonnes pratiques</h1>
+	<h:form>
+		<span>nom:<h:inputText value="#{user.nom}" /></span>
+		<span>age:<h:inputText value="#{user.age}" /></span>
+		<span><h:selectOneRadio value="#{user.sexe}">
+				<f:selectItem itemValue="M" itemLabel="Mr" />
+				<f:selectItem itemValue="F" itemLabel="Mme" />
+			</h:selectOneRadio></span>
+		<span>taille:<h:inputText value="#{user.taille}" /> </span>
+		<span>poids:<h:inputText value="#{user.poids}" /> </span>
+		<span><h:commandButton action="#{user.setImc()}" value="Calculer" /></span>
+		<span>IMC:<h:outputText value="#{user.imc}" /></span>
+		
+		<span>IMC:<h:outputText value="#{user}" /></span>
+		<span><h:commandButton action="#{user.next()}" value="Retour au Menu  Principal" /></span>
+		
+	</h:form>
+</body>
+</html>

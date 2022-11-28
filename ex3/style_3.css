@@ -1,0 +1,36 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image:
+		url("https://cdn.pixabay.com/photo/2022/11/14/10/54/sunrise-7591335_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	height: 100vh;
+}
+
+h1 {
+	color: blue;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+}
+
+span {
+	color: white;
+}
+
+p {
+	display: inline;
+	color: red;
+}
